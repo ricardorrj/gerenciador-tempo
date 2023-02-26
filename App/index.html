@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gerenciador</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>	
+	<div class="container d-flex justify-content-center">
+		<div class="col-11 mt-4" style="border: 1px solid rgba(122, 115, 115, 0.2); border-radius: 10px; padding: 20px;">
+			<!-- Alerts -->
+			<div class="alert alert-info" id="alert">
+				Tempo registrado!
+			</div>
+			<div class="alert alert-warning" id="alert-descricao">
+				Insira uma descrição válida!
+			</div>
+			
+			<h1>Gerenciador de Tempo</h1>
+			<div class="timer">00:00:00</div>
+			<p align="left" class="m-0 p-0">Inicio: <span id="hrInicio"></span></p>
+
+			<div class="input-group mt-2">
+				<div class="input-group-prepend">
+				<span class="input-group-text">Descrição</span>
+				</div>
+				<input type="text" aria-label="First name" class="form-control" id="description">
+			</div>
+
+			<div class="d-flex justify-content-between mt-2">
+				<div class="ml-auto">
+					<button class="btn btn-success start">Iniciar</button>
+					<button class="btn btn-danger stop">Parar</button>
+				</div>
+			</div>
+
+			<table class="table mt-5" id="history">
+				<thead class="thead-light">
+				  <tr>
+					<th scope="col">Descrição</th>
+					<th scope="col">Início</th>
+					<th scope="col">Fim</th>
+					<th scope="col">Total</th>
+				  </tr>
+				</thead>
+				<tbody id="history-data" class="font-black">
+				 
+				</tbody>
+				<tfooter>
+					<tr>
+						<td colspan="2" class="font-black">Tempo Total</td>
+						<td colspan="2" id="total-time" class="font-black">00:00:00</td>
+					</tr>
+				</tfooter>
+			</table>
+			  
+
+			<div class="d-flex justify-content-between mt-2">
+				<div class="ml-auto">
+					<button onclick="exportToExcel()" class="btn btn-default mt-1">Exportar histórico e Reiniciar</button>
+				</div>
+			</div>
+		</div>     
+	</div>
+
+	<div style="position: fixed; bottom: 0; width: 100%; text-align: right; padding: 10px;">
+		<span>Ricardo Jr - 2023</span>
+	</div>
+	<script src="main.js"></script>
+	<script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.19.2/package/dist/xlsx.full.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

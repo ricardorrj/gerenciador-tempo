@@ -1,0 +1,56 @@
+body {
+	background-color: #292b2c; /* fundo escuro */
+	color: #fff; /* letras claras */
+	overflow: hidden;
+	overflow: auto;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.container {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.timer {
+	font-size: 72px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	margin: 0 10px;
+}
+
+.card {
+	color: #292b2c;
+}
+
+.font-black{
+	color: black;
+}
+
+#history-data, tr, td{
+	background-color: #fff;
+}
+
+.alert {
+	display: none;
+	position: fixed;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	padding: 10px;
+	width: 50%;
+  }
+  
+
