@@ -1,4 +1,4 @@
-# gerenciador-tempo
+# Gerenciador de Tempo
 Sistema básico para gerenciamento e gravação de tempo.
 Contagem de tempo, com relogio em tela, faz registro do tempo em histórico temporário em tela, para conferencia e exportação para xls.
 
